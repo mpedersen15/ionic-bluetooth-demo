@@ -1,0 +1,24 @@
+<!--
+  Generated template for the BluetoothPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Bluetooth Scanner</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+
+<ion-content padding>
+  <button ion-button block (click)="startScan()">Start 3s Scan</button>
+
+  <ion-list>
+    <ion-item *ngFor="let device of devices" (click)="connectToDevice(device.id)">{{device.id}}</ion-item>
+  </ion-list>
+</ion-content>

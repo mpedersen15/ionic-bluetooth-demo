@@ -2,5 +2,7 @@
   "name": "ble-test",
   "app_id": "",
   "type": "ionic-angular",
-  "integrations": {}
+  "integrations": {
+    "cordova": {}
+  }
 }
